@@ -1,0 +1,519 @@
+
+
+@font-face {
+  font-family: "Open Sans";
+  src: url(https://netology-code.github.io/html-2-diploma/sources/fonts/OpenSans-Regular.woff);
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Open Sans";
+  src: url(https://netology-code.github.io/html-2-diploma/sources/fonts/OpenSans-Bold.woff);
+  font-weight: 700;
+  font-style: bold;
+}
+
+body {
+  margin: 0;
+  /*max-width: 1660px;*/
+  font-family: Open Sans, sans-serif;
+}
+/*first screen*/
+.first_screen {
+  padding: 27px;
+
+  background-image: url(https://netology-code.github.io/html-2-diploma/sources/images/banner-bg.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+
+  color: #ffffff;
+  position: relative;
+}
+.menu {
+  display: flex;
+  align-items: center;
+  text-transform: uppercase;
+  justify-content: space-between;
+
+  font-size: 13px;
+  font-weight: 400;
+
+  padding: 0 46px;
+  margin: 0 auto;
+  max-width: 1170px;
+}
+.menu::before {
+  content: "";
+  display: block;
+
+  position: absolute;
+  background-color: #000;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+
+  opacity: 0.6;
+  z-index: 1;
+}
+.pic_logo_link {
+  text-decoration: none;
+  width: 179px;
+
+  display: inline-block;
+
+  position: relative;
+  z-index: 2;
+}
+.menu_list {
+  display: flex;
+  color: inherit;
+
+  position: relative;
+  z-index: 2;
+}
+.menu_level {
+  display: inline-block;
+  padding-left: 35px;
+}
+.menu_link {
+  text-decoration: none;
+  color: inherit;
+}
+.welcome_topic {
+  font-size: 45px;
+  line-height: 1.6;
+  font-weight: 700;
+
+  text-transform: uppercase;
+  color: inherit;
+  text-align: center;
+
+  max-width: 700px;
+  margin: auto;
+  padding: 141px 0;
+
+  position: relative;
+  z-index: 2;
+}
+/*trends*/
+.trends {
+  position: relative;
+}
+.trend_theme {
+  font-family: Open Sans, sans-serif;
+  text-transform: uppercase;
+
+  font-size: 20px;
+  font-weight: 700;
+
+  text-align: center;
+  margin-bottom: 14px;
+  margin-top: 0;
+}
+.trend_list {
+  display: flex;
+}
+.trend_card {
+  display: flex;
+
+  margin-right: 5px;
+  color: #ffffff;
+  background-color: gray;
+
+  width: 25%;
+  height: 320px;
+
+  align-items: flex-end;
+}
+.trend_garden {
+  background-image: url(images\trend1.jpg);
+}
+.trend_cheese {
+  background-image: url(images\trend2.jpg);
+}
+.trend_mountain {
+  background-image: url(images\trend3.jpg);
+}
+.trend_limon {
+  background-image: url(images\trend4.jpg);
+}
+.trend_box {
+  margin: 24px;
+  padding: 44px;
+  border: 2px solid #b59f5b;
+}
+.trend_tag_list {
+  display: flex;
+  padding: 0;
+  margin: 0;
+}
+.trend_tag_level {
+  display: inline-block;
+}
+.trend_tag_link {
+  padding-right: 20px;
+  text-decoration: none;
+  text-transform: uppercase;
+
+  font-weight: 700;
+  font-size: 15px;
+  color: #b59f5b;
+}
+.trend_item {
+  text-align: left;
+  padding: 0;
+  margin: 0;
+
+  font-family: Open Sans, sans-serif;
+  text-transform: uppercase;
+
+  font-size: 20px;
+  font-weight: 700;
+}
+/*blog*/
+.content {
+  display: flex;
+  justify-content: space-between;
+  background-color: #ffffff;
+
+  max-width: 1170px;
+  margin: 0 auto;
+  padding-top: 64px;
+}
+.post {
+  display: flex;
+  margin-bottom: 58px;
+}
+.post_preview {
+  display: inline-block;
+}
+.post_pic {
+  width: 382px;
+}
+.post_content {
+  padding-left: 30px;
+
+  display: block;
+}
+.tags {
+  display: flex;
+}
+.tag_level {
+  display: inline-block;
+  margin: auto;
+  padding-right: 20px;
+}
+.tag_list {
+  padding: 0;
+  margin-top: 0;
+}
+.tag_link {
+  text-decoration: none;
+  text-transform: uppercase;
+
+  font-weight: 700;
+  font-size: 15px;
+  color: #b59f5b;
+}
+.align_items {
+  margin: 0;
+  margin-bottom: 27px;
+
+  line-height: 1.3;
+  font-size: 20px;
+}
+.item_title {
+  text-decoration: none;
+  text-transform: uppercase;
+
+  color: #000000;
+}
+.post_info {
+  font-size: 12px;
+}
+.post_date {
+  color: #888888;
+}
+.post_author {
+  font-weight: 700;
+}
+.item_description {
+  margin-top: 40px;
+  font-size: 14px;
+}
+/*aside content*/
+.content_aside {
+  margin-left: 133px;
+  width: 270px;
+}
+.aside_title {
+  font-family: Open Sans, sans-serif;
+  text-transform: uppercase;
+
+  font-size: 18px;
+  font-weight: 700;
+
+  text-align: center;
+  margin-bottom: 14px;
+  margin-top: 0;
+}
+.aside_title:after {
+  content: "";
+  display: block;
+
+  margin: auto;
+  padding-top: 14px;
+  width: 67px;
+  border-bottom: 3px solid #e1d9bd;
+}
+.aside_post {
+  display: flex;
+  margin-bottom: 20px;
+  margin-top: 29px;
+}
+.aside_post_pic {
+  width: 70px;
+}
+.aside_post_content {
+  padding-left: 20px;
+  display: block;
+
+  margin: 0;
+}
+.aside_item_title {
+  text-decoration: none;
+  text-transform: uppercase;
+
+  color: #000000;
+}
+.aside_align_items {
+  margin: 0;
+  line-height: 1.3;
+  font-size: 13px;
+}
+/*search*/
+.search_line {
+  box-sizing: border-box;
+  margin-bottom: 60px;
+  margin-top: 60px;
+}
+.label_search {
+  position: relative;
+  margin: 0;
+
+  display: flex;
+}
+.field_search {
+  width: 200px;
+  height: 49px;
+  padding-left: 18px;
+
+  background: #f4f7f6;
+  border: none;
+}
+.button_search {
+  top: 0;
+  right: 0;
+  width: 49px;
+  height: 49px;
+
+  background: #b59f5b;
+  border: none;
+}
+.button_search:before {
+  content: "\f002";
+  font-family: FontAwesome;
+  font-size: 18px;
+  color: #fbf9f5;
+}
+/*subscribe*/
+.subscribe_form {
+  box-sizing: border-box;
+  margin-top: 23px;
+  margin-bottom: 60px;
+}
+.label_subscribe {
+  position: relative;
+  margin: 0;
+}
+.field_subscribe {
+  width: 100%;
+  height: 49px;
+  padding-left: 18px;
+
+  background: #f4f7f6;
+  border-style: none;
+
+  box-sizing: border-box;
+}
+.subscribe_button {
+  position: relative;
+  width: 100%;
+  height: 49px;
+  margin-top: 18px;
+
+  background: #b59f5b;
+  border: none;
+
+  font-family: Open Sans, sans-serif;
+  font-weight: 700;
+  font-size: 12px;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+/*tags*/
+.block_tag_list {
+  padding: 0px;
+  margin-top: 23px;
+  margin-bottom: 60px;
+}
+.tag_theme {
+  display: inline-block;
+}
+.tag_theme_link {
+  display: inline-block;
+  text-decoration: none;
+  text-transform: uppercase;
+
+  color: #000000;
+  font-size: 11px;
+  font-family: Open Sans, sans-serif;
+  font-weight: 700;
+
+  margin-right: 5px;
+  margin-top: 5px;
+  padding: 8px 13px;
+  border: 3px solid #eeeeee;
+}
+/*theme*/
+.block_theme_list {
+  padding: 0px;
+  margin-top: 27px;
+}
+.theme_level {
+  display: flex;
+
+  border-bottom: 1px solid #eeeeee;
+  margin-left: 5px;
+}
+.theme_level_link {
+  text-decoration: none;
+  text-transform: capitalize;
+
+  color: #000000;
+  font-size: 13px;
+  font-family: Open Sans, sans-serif;
+  font-weight: 700;
+
+  margin: 15px 0;
+}
+.nuber_theme {
+  vertical-align: top;
+  font-size: 10px;
+  color: #b59f5b;
+  font-family: Open Sans, sans-serif;
+  font-weight: 700;
+}
+
+/*shops*/
+.shops {
+  max-width: 1170px;
+  margin: 0 auto;
+}
+.shop_theme {
+  font-family: Open Sans, sans-serif;
+  text-transform: uppercase;
+
+  font-size: 20px;
+  font-weight: 700;
+
+  text-align: center;
+}
+.shop_conteiner {
+  display: flex;
+  justify-content: space-between;
+}
+.shop_card {
+  width: 300px;
+}
+.shop_pic {
+  width: 300px;
+}
+.shop_content {
+  padding-top: 10px;
+  outline: 3px solid #d3c59d;
+  outline-offset: 30px;
+
+  flex-grow: 1;
+}
+.shop_item_title {
+  font-family: Open Sans, sans-serif;
+  text-transform: uppercase;
+
+  font-size: 20px;
+  font-weight: 700;
+}
+.shop_text {
+  flex-wrap: wrap;
+}
+.buy_button {
+  direction: column;
+  aling-items: flex-end;
+}
+/*footer*/
+.social_media {
+  width: 1170px;
+  margin: auto;
+  padding-bottom: 10px;
+}
+.block_media_links {
+  background-color: #f4f7f6;
+}
+.social_media_list {
+  display: flex;
+  margin: 0;
+  padding: 31px 0;
+  justify-content: center;
+  list-style-type: none;
+}
+.social_links {
+  display: block;
+  width: 20px;
+  height: 20px;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  font-size: 0;
+}
+.social_media_level:not(:last-child) {
+  margin-right: 30px;
+}
+.dribbble_link {
+  background-image: url(https://netology-code.github.io/html-2-diploma/sources/images/social/001-dribbble.svg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 20px;
+}
+.pinterest_link {
+  background-image: url(https://netology-code.github.io/html-2-diploma/sources/images/social/001-pinterest.svg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 20px;
+}
+.tumblr_link {
+  background-image: url(https://netology-code.github.io/html-2-diploma/sources/images/social/003-tumblr.svg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 20px;
+}
+.copyright {
+  font-family: Open Sans, sans-serif;
+  font-size: 12px;
+  color: #999999;
+  font-weight: 700;
+
+  text-align: center;
+  margin-top: 73px;
+}
