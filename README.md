@@ -1,0 +1,2 @@
+# mq-diploma
+;)
