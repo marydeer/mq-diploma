@@ -1,2 +1,3 @@
 # mq-diploma
 ;)
+love
